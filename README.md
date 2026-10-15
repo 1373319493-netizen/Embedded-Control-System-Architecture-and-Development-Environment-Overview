@@ -71,6 +71,14 @@ PyBullet 在本次 Windows 安装中需要从源码构建，使用了 Visual Stu
 
 当前 QEMU 不包含课件所用的 `stm32f103` 板型。详细情况见 [任务 1 验证记录](docs/task1-validation.md)。
 
+## GitHub 同步
+
+远程仓库已配置为本项目的 GitHub 地址，分支为 `main`。双击 `sync-github.cmd` 会推送已经提交的改动，如需登录，按 GitHub 凭据管理器提示操作。
+
+该脚本不会自动提交新修改。后续在 PyCharm 中检查改动并 Commit 后，再 Push 或运行同步脚本。同步是手动触发的，不会自动上传每次保存。
+
+若本机 Git 的代理配置已失效，脚本会仅对这次推送关闭 Git HTTP 代理，不修改系统代理。需要代理联网时，应按实际网络情况调整此设置。
+
 ## 官方资料
 
 - [ARM 工具链](https://developer.arm.com/Tools%20and%20Software/GNU%20Toolchain)
